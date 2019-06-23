@@ -13,5 +13,159 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\io">
+      <UniqueIdentifier>{983d22da-a7ea-453d-9eec-65c278e4461f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\os">
+      <UniqueIdentifier>{0c58aa69-2001-481f-b799-eb378a6395d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rcp">
+      <UniqueIdentifier>{c2043854-3def-4600-a5c1-4584e2f42682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp">
+      <UniqueIdentifier>{ad3ee461-ade4-4ead-9a17-351685d76a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\os\asm">
+      <UniqueIdentifier>{76a82f81-efbc-42bc-9efb-98f7256ee4dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Public">
+      <UniqueIdentifier>{2df88e61-d407-4da2-be60-0ca12cbddaa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Public\rcp">
+      <UniqueIdentifier>{fcced505-d5b6-4508-97d6-c3900b9aa333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Public\vr4300">
+      <UniqueIdentifier>{a3da35eb-cb51-42e3-8d7d-5b4b830a167b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp">
+      <UniqueIdentifier>{a9b55eb7-e0ac-48a0-a51e-ea873a04f391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\os">
+      <UniqueIdentifier>{a96399de-a3ee-4e81-8b2d-616bd1775853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\io">
+      <UniqueIdentifier>{9e49c91e-9228-4dd3-b653-14cd953c76f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="io\filesystem.c">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\init.c">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\pi_thread.c">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\si_thread.c">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="sp\init.c">
+      <Filter>Source Files\sp</Filter>
+    </ClCompile>
+    <ClCompile Include="sp\sp_thread.c">
+      <Filter>Source Files\sp</Filter>
+    </ClCompile>
+    <ClCompile Include="rcp\vi.c">
+      <Filter>Source Files\rcp</Filter>
+    </ClCompile>
+    <ClCompile Include="os\fbtext.c">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\main.c">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\mm.c">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\panic.c">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\thread.c">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\time.c">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\vr4300\cp0.h">
+      <Filter>Header Files\Public\vr4300</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rcp\mi.h">
+      <Filter>Header Files\Public\rcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rcp\sp.h">
+      <Filter>Header Files\Public\rcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rcp\vi.h">
+      <Filter>Header Files\Public\rcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\io.h">
+      <Filter>Header Files\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libn64.h">
+      <Filter>Header Files\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mq.h">
+      <Filter>Header Files\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp.h">
+      <Filter>Header Files\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stddef.h">
+      <Filter>Header Files\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdint.h">
+      <Filter>Header Files\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\syscall.h">
+      <Filter>Header Files\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\time.h">
+      <Filter>Header Files\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\io\filesystem.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\io\init.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\io\pi_thread.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\io\si_thread.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\os\fbtext.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\os\idle_thread.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\os\mm.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\os\panic.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\os\thread.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\os\thread_queue.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\os\thread_table.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\os\time.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\sp\init.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="priv_include\sp\sp_thread.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

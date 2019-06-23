@@ -36,7 +36,53 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;$(MSBuildThisFileDirectory)priv_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="io\filesystem.c" />
+    <ClCompile Include="io\init.c" />
+    <ClCompile Include="io\pi_thread.c" />
+    <ClCompile Include="io\si_thread.c" />
+    <ClCompile Include="os\fbtext.c" />
+    <ClCompile Include="os\main.c" />
+    <ClCompile Include="os\mm.c" />
+    <ClCompile Include="os\panic.c" />
+    <ClCompile Include="os\thread.c" />
+    <ClCompile Include="os\time.c" />
+    <ClCompile Include="rcp\vi.c" />
+    <ClCompile Include="sp\init.c" />
+    <ClCompile Include="sp\sp_thread.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\io.h" />
+    <ClInclude Include="include\libn64.h" />
+    <ClInclude Include="include\mq.h" />
+    <ClInclude Include="include\rcp\mi.h" />
+    <ClInclude Include="include\rcp\sp.h" />
+    <ClInclude Include="include\rcp\vi.h" />
+    <ClInclude Include="include\sp.h" />
+    <ClInclude Include="include\stddef.h" />
+    <ClInclude Include="include\stdint.h" />
+    <ClInclude Include="include\syscall.h" />
+    <ClInclude Include="include\time.h" />
+    <ClInclude Include="include\vr4300\cp0.h" />
+    <ClInclude Include="priv_include\io\filesystem.h" />
+    <ClInclude Include="priv_include\io\init.h" />
+    <ClInclude Include="priv_include\io\pi_thread.h" />
+    <ClInclude Include="priv_include\io\si_thread.h" />
+    <ClInclude Include="priv_include\os\fbtext.h" />
+    <ClInclude Include="priv_include\os\idle_thread.h" />
+    <ClInclude Include="priv_include\os\mm.h" />
+    <ClInclude Include="priv_include\os\panic.h" />
+    <ClInclude Include="priv_include\os\thread.h" />
+    <ClInclude Include="priv_include\os\thread_queue.h" />
+    <ClInclude Include="priv_include\os\thread_table.h" />
+    <ClInclude Include="priv_include\os\time.h" />
+    <ClInclude Include="priv_include\sp\init.h" />
+    <ClInclude Include="priv_include\sp\sp_thread.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
