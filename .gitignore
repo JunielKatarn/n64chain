@@ -1,3 +1,5 @@
+/build
+
 /doc/n64chain-doc.aux
 /doc/n64chain-doc.log
 /doc/n64chain-doc.pdf
@@ -7,6 +9,8 @@
 /rspasm/parser.c
 /rspasm/parser.h
 /rspasm/rspasm
+
+/target
 
 /tools/bin
 /tools/include
@@ -28,6 +32,7 @@
 *.obj
 *.rsppch
 *.tsk
+*.user
 *.z64
 
 /*/filesystem.h

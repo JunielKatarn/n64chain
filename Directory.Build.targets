@@ -4,6 +4,7 @@
   <!-- For build debugging purposes. -->
   <Target Name="Vars">
     <Message Text="General" />
+    <Message Text="=> SolutionDir             [$(SolutionDir)]" />
     <Message Text="=> ApplicationType         [$(ApplicationType)]" />
     <Message Text="=> Configuration           [$(Configuration)]" />
     <Message Text="=> Platform                [$(Platform)]" />

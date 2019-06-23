@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup Label="Globals">
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>8.1</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <GenerateProjectSpecificOutputFolder>false</GenerateProjectSpecificOutputFolder>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+
+  <ImportGroup Label="Defaults">
+    <Import Project="$(Platform).props" />
+    <Import Project="$(Configuration).props" />
+  </ImportGroup>
+
+  <ImportGroup Label="ConfigurationType">
+    <Import Project="$(ConfigurationType)\$(Platform).props" />
+    <Import Project="$(ConfigurationType)\$(Configuration).props" />
+  </ImportGroup>
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <!--
+        WIN32_LEAN_AND_MEAN - TODO: Re-introduce if needed
+      -->
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>false</ConformanceMode>
+
+      <!-- https://docs.microsoft.com/en-us/cpp/build/reference/sdl-enable-additional-security-checks -->
+      <SDLCheck>false</SDLCheck>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <ItemDefinitionGroup Condition="'$(ConfigurationType)' == 'Application' OR '$(ConfigurationType)' == 'DynamicLibrary'">
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+
+</Project>
