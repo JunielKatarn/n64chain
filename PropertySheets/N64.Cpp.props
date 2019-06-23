@@ -28,7 +28,9 @@
         WIN32_LEAN_AND_MEAN - TODO: Re-introduce if needed
       -->
       <PreprocessorDefinitions>%(PreprocessorDefinitions);_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS</PreprocessorDefinitions>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+
+      <CompileAs>CompileAsC</CompileAs>
+      <!-- <LanguageStandard>stdcpp17</LanguageStandard> -->
       <ConformanceMode>false</ConformanceMode>
 
       <!-- https://docs.microsoft.com/en-us/cpp/build/reference/sdl-enable-additional-security-checks -->

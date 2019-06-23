@@ -26,8 +26,6 @@
 
     <IntDir>$(BaseIntDir)\$(ProjectName)\</IntDir>
     <OutDir>$(BaseOutDir)\$(ProjectName)\</OutDir>
-
-    <GeneratedFilesDir>$(IntDir)Generated Files\</GeneratedFilesDir>
   </PropertyGroup>
 
 </Project>
