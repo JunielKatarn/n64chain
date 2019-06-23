@@ -15,6 +15,9 @@ indent_size = 2
 end_of_line = crlf
 insert_final_newline = false
 
-[*.ps1]
+[*.{ps1,sln}]
 indent_style = tab
 indent_size = 4
+
+[*.sln]
+end_of_line = crlf
