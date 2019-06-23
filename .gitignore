@@ -16,6 +16,9 @@
 /tools/share
 /tools/*-linux-gnu
 
+/.vs
+/.vscode
+
 *.a
 *.bin
 *.d
