@@ -14,7 +14,10 @@
 #define NULL ((void *) 0ULL)
 
 typedef int ssize_t;
+
+#ifndef _MSC_VER
 typedef unsigned size_t;
+#endif // !_MSC_VER
 
 #endif
 

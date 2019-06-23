@@ -11,6 +11,10 @@
 #ifndef LIBN64_INCLUDE_LIBN64_H
 #define LIBN64_INCLUDE_LIBN64_H
 
+#ifdef _MSC_VER
+#define __attribute__(unused)
+#endif // _MSC_VER
+
 #ifndef __ASSEMBLER__
 #define libn64func __attribute__ ((section (".text.libn64")))
 
